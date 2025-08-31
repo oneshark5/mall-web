@@ -171,10 +171,7 @@ export default {
         })
           .then(() => {
             this.$http({
-<<<<<<< HEAD
-=======
               // 调用
->>>>>>> master
               url: this.$http.adornUrl("/mallproduct/category/delete"),
               method: "post",
               data: this.$http.adornData(catIds, false)
