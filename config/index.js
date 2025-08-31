@@ -14,7 +14,13 @@ module.exports = {
     // 代理列表, 是否开启代理通过[./dev.env.js]配置
     proxyTable: devEnv.OPEN_PROXY === false ? {} : {
       '/proxyApi': {
+<<<<<<< HEAD
         target: 'http://demo.renren.io/renren-fast/',
+=======
+        // target: 'http://demo.renren.io/renren-fast/',
+        target: 'http://localhost:8080/renren-fast/',
+        // target: 'http://192.168.18.237:8080/renren-fast/',
+>>>>>>> master
         changeOrigin: true,
         pathRewrite: {
           '^/proxyApi': '/'
